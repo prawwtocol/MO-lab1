@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "mo-5"
+version = "0.1.0"
+description = "Lab 5 for optimization methods"
+authors = ["Your Name <you@example.com>"]
+readme = "main.md"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.26.4"
+scipy = "^1.13.0"
+matplotlib = "^3.8.4"
+jupyterlab = "^4.2.1"
+tqdm = "^4.67.1"
+pandas = "^2.3.0"
+torch = "^2.7.1"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.4.4"
+mypy = "^1.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "W", "I", "C90"]
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true 
